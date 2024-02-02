@@ -1,0 +1,16 @@
+Network -> NMS/DC: 1. Telco-data
+NMS/DC -> Kafka Pipeline: 2. Stream-data
+Kafka Pipeline -> TSDB: 3. TimeSeries Stream-data
+Query engine -> TSDB: 4. Fetching data
+TSDB -> Query engine: 5. Sending data
+Data Transfer API -> Query engine: 6. Fetching data to AI module
+Query engine -> Data Transfer API: 7. Sending data
+Data Transfer API -> AI Module: 8. Train/Forecast
+AI Module -> TSDB: 9. Store Predictions
+TSDB -> Dashboard: 10. Sending Raw and Predicted data
+Dashboard -> Dashboard: 11. Visualize Raw and Predicted data
+opt Excessive Number of Lables
+    Query engine->Volume Data Processor: 11. Excessive Data Handling
+end
+
+Dashboard -> Alert Endpoints: 12. Raised Alerts to the Endpoint services
