@@ -1,0 +1,12 @@
+LSTM Crime Forecasting
+Copyright (c) 2026 MostafaK66
+
+This repository is a production-oriented continuation of the original private
+"5G-anomaly-detection" project by MostafaK66. The executable implementation is a
+daily crime-count forecasting experiment using a tuned encoder-decoder LSTM. The
+original telecommunications architecture diagrams are retained as historical design
+material but are not implemented by this package.
+
+The original repository did not contain a license file. The owner has added the MIT
+License to this maintained version. TensorFlow, KerasTuner, datasets, and other
+dependencies retain their respective licenses and are not bundled here.

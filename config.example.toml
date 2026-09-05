@@ -1,0 +1,29 @@
+[data]
+path = "input_data/crime.csv.zip"
+year_column = "YEAR"
+month_column = "MONTH"
+day_column = "DAY"
+
+[window]
+history = 21
+horizon = 7
+step = 1
+validation_fraction = 0.3
+
+[model]
+strategy = "bayesian"
+train = true
+random_seed = 33
+max_trials = 5
+epochs = 10
+patience = 7
+minimum_delta = 0.001
+
+[output]
+directory = "outputs"
+model_directory = "trained_model"
+model_file = "best_model.keras"
+predictions_file = "predictions.csv"
+metrics_file = "metrics.csv"
+residuals_file = "residuals.csv"
+manifest_file = "run.json"

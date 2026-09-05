@@ -1,0 +1,12 @@
+# LSTM Crime Forecasting
+
+- `src/crime_forecasting/config.py`: immutable TOML configuration.
+- `src/crime_forecasting/data.py`: daily aggregation and calendar validation.
+- `src/crime_forecasting/windows.py`: safe chronological supervised windows.
+- `src/crime_forecasting/scaling.py`: leakage-free 3D standardization.
+- `src/crime_forecasting/backend.py`: lazy TensorFlow/KerasTuner boundary.
+- `src/crime_forecasting/evaluation.py`: horizon metrics and residuals.
+- `src/crime_forecasting/artifacts.py`: result persistence.
+- `src/crime_forecasting/service.py`: pipeline orchestration.
+- `tests/`: deterministic offline tests.
+- `design-diagrams/`: historical, non-executable telecommunications diagrams.
